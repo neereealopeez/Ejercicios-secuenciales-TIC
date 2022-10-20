@@ -1,4 +1,6 @@
-#Cuarto Ejercicio: Dados dos números, mostrar la suma, resta, división y multiplicación de ambos.num1=0num2=0
+#Cuarto Ejercicio: Dados dos números, mostrar la suma, resta, división y multiplicación de ambos.
+num1=0
+num2=0
 num1= (int)(input("¿Cuál es el primer número? "))
 
 num2= (int)(input("¿Cuál es el segundo número? "))

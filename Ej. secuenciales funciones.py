@@ -69,4 +69,67 @@ def ejer7():
     print("Has ingresado", minutos , "minutos son" , (truncate(horas)), "horas y", ((10/horas)*60), "minutos")
 ejer7()
 
-print("Octavo Ejercicio:_Un vendedor recibe un sueldo base mas un 10% extra por comisión de sus ventas, el vendedor desea saber cuanto dinero obtendrá por concepto decomisiones por las tres ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.")
+print("Octavo Ejercicio: Un vendedor recibe un sueldo base mas un 10% extra por comisión de sus ventas, el vendedor desea saber cuanto dinero obtendrá por concepto decomisiones por las tres ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.")
+def ejer8():
+    venta1=0
+    venta2=0
+    venta3=0
+    sueldo=0
+    totalv=0
+    comisiones=0
+    dinero=0
+    venta1= (int)(input("¿Dinero ganado en la primera venta? "))
+    venta2= (int)(input("¿Dinero ganado en la segunda venta? "))
+    venta3= (int)(input("¿Dinero ganado en la tercera venta? "))
+    sueldo= (int)(input("¿Sueldo recibido? "))
+    totalv= (venta1 + venta2 + venta3)
+    comisiones= (totalv * 0.1)
+    dinero= (sueldo + comisiones)
+    print("El total de las tres ventas es", totalv, ", las comisiones son", comisiones, "y el dinero total ganado es", dinero)
+ejer8()
+
+print("Noveno Ejercicio: Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente desea saber cuanto deberá pagar finalmente por su compra.")
+def ejer9():
+    total=0
+    descuento=0
+    total= (int)(input("¿Cuál es el total de la compra? "))
+    descuento= (total * 0.15)
+    print("Lo que el cliente deberá pagar es", (total-descuento))
+ejer9()
+
+print("Décimo Ejercicio: Un alumno desea saber cual será su calificación final en la materia de  Algoritmos. Dicha calificación se compone de los siguientes porcentajes: 55% del promedio de sus tres calificaciones parciales. 30% de la calificación del examen final. 15% de la calificación de un trabajo final.")
+def ejer10():
+    nota1=0
+    nota2=0
+    nota3=0
+    examen=0
+    trabajo=0
+    promedio=0
+    promediofinal=0
+    nota1= (int)(input("¿Cuál es la primera nota? "))
+    nota2= (int)(input("¿Cuál es la segunda nota? "))
+    nota3= (int)(input("¿Cuál es la tercera nota? "))
+    examen= (int)(input("¿Cuál es la calificación en el examen final? "))
+    trabajo= (int)(input("¿Cuál es la nota  del trabajo? "))
+    promedio= ((nota1+nota2+nota3)/3)
+    promediofinal = (promedio * .55)+(examen * .30)+(trabajo * .15)
+    print("El promedio final de la materia de algoritmos es:",round(promediofinal,1))
+ejer10()
+
+print("Vigésimo Ejercicio: Diseñar un algoritmo que nos diga el dinero que tenemos (en euros y céntimos)  después de pedirnos cuantas monedas tenemos (de 2€, 1€, 50 céntimos, 20 céntimos o 10 céntimos).")
+def ejer20():
+    euro2=0
+    euro1=0
+    cent50=0
+    cent20=0
+    cent10=0
+    total_euros=0
+    total_centimos=0
+    euro2= (int)(input("¿Monedas de 2 euros? "))
+    euro1= (int)(input("¿Monedas de 1 euro? "))
+    cent50= (int)(input("¿Monedas de 50 céntimos? "))
+    cent20= (int)(input("¿Monedas de 20 céntimos? "))
+    cent10= (int)(input("¿Monedas de 10 céntimos? "))
+    total_euros= ((euro2 * 2) + (euro1))
+    total_centimos= ((cent50 * 0.50) + (cent20 * 0.20) + (cent10 * 0.10))
+    print("El total de euros es", total_euros, "y de céntimos es", total_centimos)
