@@ -6,24 +6,35 @@ def ejer1():
 ejer1()
 
 print("Segundo ejercicio: Calcular el perímetro y área de un rectángulo dada su base y su altura.")
-def ejer2():
-    base=0
-    altura=0
-    base= (int)(input("¿Cuál es su base? "))
-    altura= (int)(input("¿Cuál es su altura? "))
-    print("El área es:" , base*altura)
-    print("El perímetro es:", (2*altura)+(2*base))
-ejer2()
+def calcularÁrea(base:int, altura:int):
+    area=(base*altura)
+    return area
+def calcularPerímetro(base:int , altura:int):
+    perimetro=((2*altura)+(2*base))
+    return perimetro
+def calcularÁreaYPerímetro(base: int, altura: int):
+    #Devuelvo una lista con área, perímetro
+    vDatos=[]
+    area=calcularÁrea(base, altura)
+    perímetro=calcularPerímetro(base, altura)
+    vDatos.append(area)
+    vDatos.append(perímetro)
+    return vDatos
+#Principal
+base= (int)(input("¿Cuál es su base? "))
+altura= (int)(input("¿Cuál es su altura? "))
+
+vNum= calcularÁreaYPerímetro(base,altura)
+print("El área es:", vNum[0])
+print("El perímetro es:", vNum[1])
 
 print("Tercer Ejercicio: Dados los catetos de un triángulo rectángulo, calcular su hipotenusa.")
-def ejer3():
-    cateto1=0
-    cateto2=0
+def ejer3(cateto1:int, cateto2:int):
     import math
-    cateto1= (int)(input("¿Primer cateto? "))
-    cateto2= (int)(input("¿Segundo cateto? "))
-    print("La hipotenusa es", math.sqrt(((cateto1**2)+(cateto2**2))))
-ejer3()
+    return (math.sqrt(((cateto1**2)+(cateto2**2))))
+
+print("Ejercicio 3",ejer3(5,8))
+
 
 print("Cuarto Ejercicio: Dados dos números, mostrar la suma, resta, división y multiplicación de ambos.")
 def ejer4():
