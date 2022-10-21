@@ -5,6 +5,8 @@ def ejer1():
     print("Tu nombre es", nombre,)
 ejer1()
 
+
+
 print("Segundo ejercicio: Calcular el perímetro y área de un rectángulo dada su base y su altura.")
 def calcularÁrea(base:int, altura:int):
     area=(base*altura)
@@ -23,17 +25,18 @@ def calcularÁreaYPerímetro(base: int, altura: int):
 #Principal
 base= (int)(input("¿Cuál es su base? "))
 altura= (int)(input("¿Cuál es su altura? "))
-
 vNum= calcularÁreaYPerímetro(base,altura)
 print("El área es:", vNum[0])
 print("El perímetro es:", vNum[1])
+
+
 
 print("Tercer Ejercicio: Dados los catetos de un triángulo rectángulo, calcular su hipotenusa.")
 def ejer3(cateto1:int, cateto2:int):
     import math
     return (math.sqrt(((cateto1**2)+(cateto2**2))))
+print(ejer3(5,8))
 
-print("Ejercicio 3",ejer3(5,8))
 
 
 print("Cuarto Ejercicio: Dados dos números, mostrar la suma, resta, división y multiplicación de ambos.")
@@ -48,6 +51,8 @@ def ejer4():
     print("Su multiplicación es", num1*num2)
 ejer4()
 
+
+
 print("Quinto Ejercicio: Escribir un programa que convierta un valor dado en grados Fahrenheit a grados Celsius. ")
 def ejer5():
     gradof=0
@@ -56,6 +61,8 @@ def ejer5():
     gradoc=(gradof-32)*5/9
     print("Son", gradoc, "ºC")
 ejer5()
+
+
 
 print("Sexto Ejercicio: Calcular la media de tres números pedidos por teclado.")
 def ejer6():
@@ -68,6 +75,8 @@ def ejer6():
     print("Su media es", (num1+num2+num3)/3)
 ejer6()
 
+
+
 print("Séptimo Ejercicio: Realiza un programa que reciba una cantidad de minutos y muestre por pantalla a cuantas horas y minutos corresponde.Por ejemplo: 1000 minutos son 16 horas y 40 minutos.")
 def ejer7():
     def truncate(horas, decimals = 0): 
@@ -79,6 +88,8 @@ def ejer7():
     horas=minutos/60
     print("Has ingresado", minutos , "minutos son" , (truncate(horas)), "horas y", ((10/horas)*60), "minutos")
 ejer7()
+
+
 
 print("Octavo Ejercicio: Un vendedor recibe un sueldo base mas un 10% extra por comisión de sus ventas, el vendedor desea saber cuanto dinero obtendrá por concepto decomisiones por las tres ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.")
 def ejer8():
@@ -99,6 +110,8 @@ def ejer8():
     print("El total de las tres ventas es", totalv, ", las comisiones son", comisiones, "y el dinero total ganado es", dinero)
 ejer8()
 
+
+
 print("Noveno Ejercicio: Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente desea saber cuanto deberá pagar finalmente por su compra.")
 def ejer9():
     total=0
@@ -107,6 +120,8 @@ def ejer9():
     descuento= (total * 0.15)
     print("Lo que el cliente deberá pagar es", (total-descuento))
 ejer9()
+
+
 
 print("Décimo Ejercicio: Un alumno desea saber cual será su calificación final en la materia de  Algoritmos. Dicha calificación se compone de los siguientes porcentajes: 55% del promedio de sus tres calificaciones parciales. 30% de la calificación del examen final. 15% de la calificación de un trabajo final.")
 def ejer10():
@@ -126,6 +141,8 @@ def ejer10():
     promediofinal = (promedio * .55)+(examen * .30)+(trabajo * .15)
     print("El promedio final de la materia de algoritmos es:",round(promediofinal,1))
 ejer10()
+
+
 
 print("Vigésimo Ejercicio: Diseñar un algoritmo que nos diga el dinero que tenemos (en euros y céntimos)  después de pedirnos cuantas monedas tenemos (de 2€, 1€, 50 céntimos, 20 céntimos o 10 céntimos).")
 def ejer20():
